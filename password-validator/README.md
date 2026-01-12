@@ -1,6 +1,6 @@
 # Password Validator
 
-## 📌 Objetivo
+##  Objetivo
 
 Este projeto implementa uma **biblioteca Java reutilizável** para validação de senhas, desenvolvida como parte de um desafio técnico.
 
@@ -42,17 +42,17 @@ com.company.password
 - rule
 
 
-### 🔹 Domain
+###  Domain
 - Contém apenas regras de negócio
 - Não depende de frameworks ou detalhes técnicos
 - Cada regra possui **uma única responsabilidade**
 
-### 🔹 Application
+###  Application
 - Responsável por **orquestrar** as regras do domínio
 - Centraliza validações transversais (ex.: `null`)
 - Depende apenas de abstrações
 
-### 🔹 API
+###  API
 - Camada de exposição pública da biblioteca
 - Implementa o padrão **Facade**
 - Esconde toda a complexidade interna da solução
@@ -61,21 +61,21 @@ com.company.password
 
 ##  Principais decisões técnicas
 
-### ✔ Interface para regras (`PasswordRule`)
+###  Interface para regras (`PasswordRule`)
 - Permite adicionar novas regras sem modificar código existente
 - Atende ao princípio **Open/Closed (SOLID)**
 
-### ✔ Uma classe por regra
+###  Uma classe por regra
 - Evita métodos monolíticos
 - Facilita leitura, testes e manutenção
 - Mantém alta coesão
 
-### ✔ Evitar uso de regex
+###  Evitar uso de regex
 - Foram utilizadas APIs nativas da linguagem (`Character`, `String`)
 - Maior legibilidade e menor complexidade
 - Código mais fácil de manter e depurar
 
-### ✔ Validação de `null` centralizada
+###  Validação de `null` centralizada
 - Tratada na camada de aplicação
 - Mantém as regras focadas exclusivamente em seus critérios
 
@@ -93,7 +93,7 @@ Os testes validam **o comportamento da API pública**, permitindo refatorações
 
 ---
 
-## ▶ Como executar o projeto
+##  Como executar o projeto
 
 ### Pré-requisitos
 - Java **17**
@@ -102,3 +102,4 @@ Os testes validam **o comportamento da API pública**, permitindo refatorações
 ### Executar os testes
 ```bash
 mvn clean test
+
