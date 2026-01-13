@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Password Validator
 
 ##  Objetivo
@@ -102,3 +103,6 @@ Os testes validam **o comportamento da API pública**, permitindo refatorações
 ### Executar os testes
 ```bash
 mvn clean test
+=======
+# passwordItau
+>>>>>>> e2fda77ca7350bf82c4dbec65dcd89e97590c568
